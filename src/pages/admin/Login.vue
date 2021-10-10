@@ -66,9 +66,6 @@ const login = async () => {
                 errors.email = true
                 errors.password = true
             } else {
-                cookies.set('user', user, session.expires_in)
-                cookies.set('access_token', session.access_token, session.expires_in)
-                cookies.set('refresh_token', session.access_token, session.expires_in)
                 router.push({ name: 'admin' })
             }
         }).catch(() => {

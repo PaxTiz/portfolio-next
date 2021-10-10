@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import supabase from './supabase'
 
 const routes = [
     { path: '/', name: 'home', component: () => import('@/pages/Home.vue') },
@@ -15,6 +16,7 @@ const routes = [
         },
         component: () => import('@/pages/admin/Admin.vue') 
     },
+    { path: '/:catchAll(.*)', name: '404', component: () => import('@/pages/404.vue') },
 ]
 
 const router = createRouter({
@@ -24,9 +26,9 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
     const { $cookies } = router.app.config.globalProperties
-    const isAuth = $cookies.get('user') && $cookies.get('access_token') && $cookies.get('refresh_token')
+    const isAuth = supabase.auth.user() !== null
     if (to.name === 'login' && isAuth) {
-        return next({ name: 'admin' })
+        return next({ name: 'home' })
     }
     if (to.meta.requiresAuth && !isAuth) {
         return next({ name: 'login' })
