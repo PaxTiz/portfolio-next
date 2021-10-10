@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <Modal v-if="showModal" :id="currentModalItem" @close="closeModal" />
+    <WorkDetailsModal v-if="showModal" :id="currentModalItem" @close="closeModal" />
 </template>
 
 <script setup>
@@ -40,7 +40,7 @@ import { onMounted, ref } from 'vue'
 import aura from '@/assets/images/works/aura.png'
 import portfolio from '@/assets/images/works/portfolio.png'
 import CustomButton from '@/components/CustomButton.vue'
-import Modal from '@/components/Modal.vue'
+import WorkDetailsModal from '@/components/WorkDetailsModal.vue'
 import supabase from '@/supabase'
 import useLoading from '@/hooks/useLoading'
 import Loading from '@/components/Loading.vue'
