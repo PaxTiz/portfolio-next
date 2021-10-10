@@ -8,6 +8,7 @@
 :root {
   --blue: rgb(104, 154, 240);
   --red: rgb(255, 43, 53);
+  --green: rgb(43, 255, 131);
   --light-blue: rgb(241, 245, 254);
   /* --dark: rgb(27 28 47);
   --background: rgb(35, 36, 61); */
@@ -107,7 +108,7 @@ h2.error {
   cursor: pointer;
 }
 
-input, textarea {
+input:not([type=checkbox]), textarea {
   display: block;
   border: none;
   background-color: var(--background);
@@ -137,4 +138,17 @@ label {
 }
 label input, label textarea {
   margin-top: var(--spacing-1);
+}
+
+.modal-wrapper {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

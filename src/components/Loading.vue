@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card loader">
         <div class="semipolar-spinner">
             <div class="ring"></div>
             <div class="ring"></div>

@@ -66,6 +66,10 @@ const login = async () => {
                 errors.email = true
                 errors.password = true
             } else {
+                supabase.auth.onAuthStateChange = (event, session) => {
+                    router.push({ name: 'login' })    
+                }
+                
                 router.push({ name: 'admin' })
             }
         }).catch(() => {
