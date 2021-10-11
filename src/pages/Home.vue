@@ -29,7 +29,7 @@ const aboutPage = () => {
 .background {
     position: relative;
     width: 100vw;
-    margin: 4em 0;
+    margin: 8em 0;
 }
 
 .container {
