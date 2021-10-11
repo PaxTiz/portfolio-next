@@ -37,12 +37,10 @@
 
 <script setup>
 import { onMounted, ref } from 'vue'
-import aura from '@/assets/images/works/aura.png'
-import portfolio from '@/assets/images/works/portfolio.png'
+import useLoading from '@/hooks/useLoading'
+import supabase from '@/supabase'
 import CustomButton from '@/components/CustomButton.vue'
 import WorkDetailsModal from '@/components/WorkDetailsModal.vue'
-import supabase from '@/supabase'
-import useLoading from '@/hooks/useLoading'
 import Loading from '@/components/Loading.vue'
 
 const [loading, toggleLoading] = useLoading()

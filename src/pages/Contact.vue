@@ -85,8 +85,8 @@
 </template>
 
 <script setup>
-import CustomButton from '@/components/CustomButton.vue'
 import { reactive, watch } from 'vue'
+import CustomButton from '@/components/CustomButton.vue'
 
 const form = reactive({
     firstname: '',

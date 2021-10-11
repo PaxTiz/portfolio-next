@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import CustomButton from '@/components/CustomButton.vue';
+import CustomButton from '@/components/CustomButton.vue'
 </script>
 
 <style scoped>

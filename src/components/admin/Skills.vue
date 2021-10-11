@@ -32,8 +32,8 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import CustomButton from '@/components/CustomButton.vue'
-import { ref } from '@vue/reactivity'
 
 const isOpen = ref(false)
 

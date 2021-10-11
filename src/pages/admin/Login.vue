@@ -33,10 +33,10 @@
 </template>
 
 <script setup>
-import CustomButton from '@/components/CustomButton.vue'
-import supabase from '@/supabase'
 import { inject, reactive, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
+import supabase from '@/supabase'
+import CustomButton from '@/components/CustomButton.vue'
 
 const cookies = inject('cookies')
 const router = useRouter()

@@ -19,9 +19,8 @@
 </template>
 
 <script setup>
+import { onMounted, ref } from 'vue'
 import CustomButton from '@/components/CustomButton.vue'
-import { ref } from '@vue/reactivity'
-import { onMounted } from '@vue/runtime-core'
 
 const isOpen = ref(false)
 

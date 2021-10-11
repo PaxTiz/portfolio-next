@@ -26,11 +26,11 @@
 </template>
 
 <script setup>
-import CustomButton from '@/components/CustomButton.vue';
-import Loading from '../components/Loading.vue'
-import { onMounted, ref } from '@vue/runtime-core';
-import useLoading from '@/hooks/useLoading';
+import { onMounted, ref } from 'vue'
+import useLoading from '@/hooks/useLoading'
 import supabase from '@/supabase.js'
+import CustomButton from '@/components/CustomButton.vue'
+import Loading from '../components/Loading.vue'
 
 const [loading, toggleLoading] = useLoading(false)
 const skills = ref([])

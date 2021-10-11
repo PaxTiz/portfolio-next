@@ -7,8 +7,8 @@
 </template>
 
 <script setup>
-import CustomButton from '@/components/CustomButton.vue';
-import { useRouter } from 'vue-router';
+import CustomButton from '@/components/CustomButton.vue'
+import { useRouter } from 'vue-router'
 
 const router = useRouter()
 

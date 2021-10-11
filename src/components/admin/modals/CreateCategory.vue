@@ -47,8 +47,8 @@
 <script setup>
 import { reactive, watch } from "vue"
 import { v4 as uuidv4 } from "uuid"
-import Modal from "@/components/Modal.vue"
 import supabase from "@/supabase"
+import Modal from "@/components/Modal.vue"
 
 const form = reactive({
     name: '',
