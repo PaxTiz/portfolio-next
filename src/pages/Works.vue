@@ -10,7 +10,7 @@
                 class="card"
             >
                 <div class="card-header">
-                    <img :src="work.image" alt="">
+                    <img :src="work.image" alt="" loading="lazy">
                 </div>
                 <div class="card-body">
                     <h2 @click="() => openModal(work)" class="active-small">{{ work.year }} - {{ work.title }}</h2>
