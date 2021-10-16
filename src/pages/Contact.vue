@@ -5,9 +5,6 @@
         <div class="grid">
             <ul>
                 <li>
-                    Adresse : <a target="_blank" class="active-small" href="https://goo.gl/maps/vLUy3WDbyLwzsjqY9">0 rue Robert Defosse, 62160 Bully-Les-Mines, Pas de Calais, France</a>
-                </li>
-                <li>
                     Email : <a class="active-small" href="mailto:vcernuta@protonmail.com">vcernuta@protonmail.com</a>
                 </li>
                 <li>
@@ -18,6 +15,9 @@
                 </li>
                 <li>
                     LinkedIn : <a target="_blank" class="active-small" href="https://www.linkedin.com/in/valentin-cernuta/">Valentin Cernuta</a>
+                </li>
+                <li>
+                    Adresse : <a target="_blank" class="active-small" href="https://goo.gl/maps/vLUy3WDbyLwzsjqY9">0 rue Robert Defosse, 62160 Bully-Les-Mines, Pas de Calais, France</a>
                 </li>
             </ul>
             <form class="form" @submit.prevent="submit">

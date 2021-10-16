@@ -41,6 +41,15 @@
                 <p>
                     Copyright &copy; {{ year() }} Valentin Cernuta - Tous droits réservés
                 </p>
+                <p>
+                    <a 
+                        class="active-small"
+                        target="_blank" 
+                        href="https://github.com/PaxTiz/portfolio-next"
+                    >
+                        Code de ce projet
+                    </a>
+                </p>
             </div>
         </div>
     </div>    
