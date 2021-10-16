@@ -3,14 +3,12 @@
         <h1>Administration</h1>
 
         <Loading v-if="loading" />
-        <div v-else>
-            <div class="grid">
-                <SkillCategories :items="categories" />
-                <Skills :items="skills" />
-            </div>
+        <template v-else>
+            <SkillCategories :items="categories" />
+            <Skills :items="skills" :categories="categories" />
             <Works :items="works" />
             <Images :items="images" />
-        </div>
+        </template>
     </div>
 </template>
 

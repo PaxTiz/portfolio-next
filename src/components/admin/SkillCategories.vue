@@ -9,18 +9,20 @@
         </div>
         <div class="card-body" v-if="isOpen">
             <div class="table">
-                <div class="row row-3 header">
+                <div class="row header">
                     <p>Nom</p>
+                    <p>Nom anglais</p>
                     <p>Privé</p>
                     <p class="actions">Actions</p>
                 </div>
                 <div 
                     v-for="category in items"
                     :key="category.id"
-                    class="row row-3"
+                    class="row"
                 >
                     <p>{{ category.name }}</p>
-                    <p>{{ category.private }}</p>
+                    <p>{{ category.en_name }}</p>
+                    <p>{{ isPrivate(category.private) }}</p>
                     <p class="error" @click="() => toggleModal(category)">Supprimer</p>
                 </div>
             </div>
@@ -53,11 +55,8 @@ const showCreate = ref(false)
 const currentModalItem = ref(null)
 const isOpen = ref(false)
 
-const toggle = () => {
-    isOpen.value = !isOpen.value
-}
 
-const toggleModal = (item) => {
+const toggleModal = item => {
     if (showModal.value === true) {
         showModal.value = false
         currentModalItem.value = null
@@ -66,9 +65,9 @@ const toggleModal = (item) => {
         currentModalItem.value = item
     }
 }
-const toggleCreate = (item) => {
-    showCreate.value = !showCreate.value
-}
+const toggle = () => isOpen.value = !isOpen.value
+const toggleCreate = () => showCreate.value = !showCreate.value
+const isPrivate = boolean => boolean ? 'Oui' : 'Non'
 
 const deleteItem = async del => {
     if (del) {
@@ -88,3 +87,9 @@ defineProps({
     }
 })
 </script>
+
+<style scoped>
+.row {
+    grid-template-columns: 1fr 1fr 1fr 100px;
+}
+</style>

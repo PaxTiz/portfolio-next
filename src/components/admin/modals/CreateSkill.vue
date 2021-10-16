@@ -1,16 +1,16 @@
 <template>
     <Modal @close="closeModal">
         <div class="card-body">
-            <h2>Ajouter une catégorie</h2>
+            <h2>Ajouter une compétence</h2>
             <form method="post" @submit="create">
                 <label for="name">
-                    Nom de la catégorie
+                    Nom de la compétence
                     <input
                         v-model="form.name"
                         :class="{'error': errors.name}"
                         type="text" 
                         name="name" 
-                        placeholder="Nom de la catégorie"
+                        placeholder="Nom de la compétence"
                     >
                 </label>
                 <label for="en_name">
@@ -20,16 +20,24 @@
                         :class="{'error': errors.en}"
                         type="text" 
                         name="en_name" 
-                        placeholder="Nom en anglais"
+                        placeholder="Nom en compétence"
                     >
                 </label>
-                <label for="private">
-                    Afficher ?
-                    <input 
-                        v-model="form.checked"
-                        type="checkbox" 
-                        name="private" 
+                <label for="category">
+                    Catégorie
+                    <select 
+                        v-model="form.category" 
+                        :class="{'error': errors.category}"
+                        name="category"
                     >
+                        <option 
+                            v-for="category in categories"
+                            :key="category.id"
+                            :value="category.id"
+                        >
+                            {{ category.name }}
+                        </option>
+                    </select>
                 </label>
             </form>
         </div>
@@ -50,14 +58,22 @@ import { v4 as uuidv4 } from "uuid"
 import supabase from "@/supabase"
 import Modal from "@/components/Modal.vue"
 
+defineProps({
+    categories: {
+        type: Array,
+        required: true
+    }
+})
+
 const form = reactive({
     name: '',
     en: '',
-    checked: true
+    category: null,
 })
 const errors = reactive({
     name: false,
     en: false,
+    category: false,
 })
 const emits = defineEmits(['close'])
 const closeModal = (val) => emits('close', val)
@@ -73,12 +89,15 @@ const create = () => {
     if (form.en.length === 0) {
         errors.en = true
     }
+    if (form.category == null) {
+        errors.category = true
+    }
 
     if (Object.values(errors).every(e => e === false)) {
-        supabase.from('skill_category').insert({
+        supabase.from('skill').insert({
             name: form.name,
             en_name: form.en,
-            private: form.checked,
+            category: form.category,
             id: uuidv4()
         }, { returning: 'minimal' }).then(({ error }) => {
             if (!error) {
