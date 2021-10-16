@@ -37,4 +37,8 @@ button {
     background-color: var(--light-blue);
     color: var(--blue);
 }
+.danger {
+    background-color: var(--red);
+    color: #fff;
+}
 </style>
