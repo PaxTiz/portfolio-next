@@ -22,8 +22,8 @@
             <p class="content">{{ item.content }}</p>
 
             <div class="buttons">
-                <CustomButton @click="openWebsite" text="Voir en ligne" />
-                <CustomButton @click="openVCS" text="Sources" />
+                <CustomButton v-if="item.website" @click="openWebsite" text="Voir en ligne" />
+                <CustomButton v-if="item.vcs" @click="openVCS" text="Sources" />
             </div>
         </div>
     </Modal>
