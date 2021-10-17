@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-vue",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.24.0",
+    "epic-spinners": "^1.1.0",
+    "slugify": "^1.6.1",
+    "uuid": "^8.3.2",
+    "vue": "^3.2.20",
+    "vue-router": "^4",
+    "vue3-carousel": "^0.1.27",
+    "vue3-cookies": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.1",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "@vue/cli-plugin-router": "~4.5.14",
+    "source-map-js": "^0.6.2",
+    "vite": "^2.6.7"
+  }
+}
