@@ -21,6 +21,6 @@
     "@vitejs/plugin-vue": "^1.9.3",
     "@vue/cli-plugin-router": "~4.5.14",
     "source-map-js": "^0.6.2",
-    "vite": "^2.6.7"
+    "vite": "^2.6.13"
   }
 }
