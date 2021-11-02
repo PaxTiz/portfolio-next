@@ -1319,10 +1319,10 @@ vue-router@^4:
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.18"
 
-vue3-carousel@^0.1.29:
-  version "0.1.29"
-  resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.1.29.tgz#a03bda7f64f1ff5c044c094d1b58eb78101e419f"
-  integrity sha512-GVyv+V4PKMLqXL9RBZCjCxED/35+wwqsWV0GqXGZg0qC1lY1WYm1yb2BwOPb+MdiPkiWoMF7RysxkmmSvFI4iw==
+vue3-carousel@^0.1.30:
+  version "0.1.30"
+  resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.1.30.tgz#bc12e364ab2b49571759beca6c7c1b26f36d59f5"
+  integrity sha512-J/kJSqyagNk4nGDeSKi0dFTTkNqPqRjX5WzLZUdlZPSE7swt75an1uVqdljUM7ZgDkqTHPNRfad4VHtI+IC+6g==
 
 vue3-cookies@^1.0.1:
   version "1.0.1"
