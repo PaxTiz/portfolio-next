@@ -1140,10 +1140,10 @@ source-map-js@^0.6.2:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-0.6.2.tgz#0bb5de631b41cfbda6cfba8bd05a80efdfd2385e"
   integrity sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug==
 
-source-map-js@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.0.tgz#213f9a99b0e1a7895bbbf6559297ea9666280d7a"
-  integrity sha512-eFjddZXcbqnQTBqzHRaA62imIAPJFDrfs4cQzy+9CgjrxJVmZEDPwyWzV+AClDYP0/ooqwDVpv16Vat8SvrZhQ==
+source-map-js@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.1.tgz#a1741c131e3c77d048252adfa24e23b908670caf"
+  integrity sha512-4+TN2b3tqOCd/kaGRJ/sTYA0tR0mdXx26ipdolxcwtJVqEnqNYvlCAt1q3ypy4QMlYus+Zh34RNtYLoq2oQ4IA==
 
 source-map@^0.6.1:
   version "0.6.1"
