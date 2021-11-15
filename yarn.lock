@@ -735,11 +735,6 @@ is-core-module@^2.2.0:
   dependencies:
     has "^1.0.3"
 
-is-mobile@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/is-mobile/-/is-mobile-2.2.2.tgz#f6c9c5d50ee01254ce05e739bdd835f1ed4e9954"
-  integrity sha512-wW/SXnYJkTjs++tVK5b6kVITZpAZPtUrt9SF80vvxGiF/Oywal+COk1jlRkiVq15RFNEQKQY31TkV24/1T5cVg==
-
 is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
@@ -1329,12 +1324,11 @@ vue3-carousel@^0.1.30:
   resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.1.30.tgz#bc12e364ab2b49571759beca6c7c1b26f36d59f5"
   integrity sha512-J/kJSqyagNk4nGDeSKi0dFTTkNqPqRjX5WzLZUdlZPSE7swt75an1uVqdljUM7ZgDkqTHPNRfad4VHtI+IC+6g==
 
-vue3-cookies@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/vue3-cookies/-/vue3-cookies-1.0.1.tgz#23f5c7c3fe5692c1c013f01e7b800cf0d62c512c"
-  integrity sha512-sjkcZSHibVkxzw4zoktvCewhOA5vmTON2GphPfudHK70LiEaDPOmw/aserqNQophqVrlvsjFjKMBTxC0ISrAGA==
+vue3-cookies@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/vue3-cookies/-/vue3-cookies-1.0.6.tgz#c1da41f1f3d6bbea8e75157d49d09dfc2a18ca8a"
+  integrity sha512-a1UvVD0qIgxyOqjlSOwnLnqAnz8ASltugEv8yX+96i/WGZAN9fEDci7xO4HIWZE1uToUnRq9JnFhvfDCSo45OA==
   dependencies:
-    is-mobile "^2.2.2"
     vue "^3.0.0"
 
 vue@^3.0.0, vue@^3.2.21:
