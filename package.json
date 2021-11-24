@@ -14,7 +14,7 @@
     "vue": "^3.2.22",
     "vue-router": "^4",
     "vue3-carousel": "^0.1.30",
-    "vue3-cookies": "^1.0.1"
+    "vue3-cookies": "^1.0.6"
   },
   "devDependencies": {
     "@types/uuid": "^8.3.1",
