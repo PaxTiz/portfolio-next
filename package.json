@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/uuid": "^8.3.4",
     "@vitejs/plugin-vue": "^2.1.0",
-    "@vue/cli-plugin-router": "~4.5.15",
+    "@vue/cli-plugin-router": "~5.0.6",
     "source-map-js": "^1.0.2",
     "vite": "^2.7.13"
   }
